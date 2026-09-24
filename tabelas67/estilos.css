@@ -1,0 +1,52 @@
+footer{
+    background-color: #191818;
+    color: #fafbfc;
+    padding: 5px;
+    text-align: center;
+}
+
+main{
+    background-color: whitesmoke;
+    color: #0e0e0e;
+    padding: 5px;
+    text-align: center;
+}
+
+main table{
+    width: 400px;
+    border: 1px solid;
+    text-align: center;
+}
+
+main table td, main table th{
+    border: 1px solid;
+}
+
+main table td img:hover{
+    width: 150px;
+}
+
+
+header{
+    background-color:palevioletred;
+    padding: 5px;
+    color: white;
+}
+
+header nav {
+    background-color:aliceblue;
+}
+
+header nav ul{
+    list-style: none;
+    position: relative;
+    height: 30px;
+    display: flex;
+}
+
+header nav ul li a{
+    position: absolute;
+    display: block;
+    margin: 10px;
+
+}
