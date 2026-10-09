@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Perfil</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindo ao Perfil</h1>
+    </header>
+    <main>
+        <form>
+            <div id="mensagem" class="alert alert-info" role="alert" style="display: none;">
+
+
+            </div>
+
+            <div>
+                <img src="images/terno.png" alt="Foto de Perfil" width="150"
+                onmouseover="console.log('mouse sobre a imagem')">
+            </div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" value="Digite seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="nascimento" class="form-label">Nascimento:</label>
+                <input type="date" class="form-control" id="nascimento" name="nascimento"
+                value="Digite quando vc nasceu" onblur="validaNascimento()">
+            </div>
+
+            <div class="form-group">
+                <label for="cpf" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="cpf" name="CPF" value="seu CPF" onblur="validaCPF()">
+            </div>
+
+            <div class="form-group">
+                <button type="button" onclick="mensagem()">salvar</button>
+            </div>
+
+
+
+            <div>
+               <p>Vc gostou de nossa pagina de login?:</p>
+
+               <input type="radio" name="opcao" value="sim"> sim
+               <input type="radio" name="opcao" value="não"> Mais ou menos
+               <input type="radio" name="opcao" value="mais ou menos"> Não
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript">
+        function mensagem(){
+            const msg = document.querySelector('#mensagem');
+            
+            if(validaNascimento() == false) {
+                return;
+            }
+
+            if(validaCPF() == false) {
+                return;
+            }
+            msg.style.display = "block";
+            msg.textContent = "perfil salvo com sucesso!";
+        }
+
+        function validaCPF(){
+            const cpf = document.querySelector('#cpf').value;
+            const msg = document.querySelector('#mensagem');
+            const numeros = cpf.replace(/\D/g, ''); // Remove caracteres não numéricos (visto no site de orientação)
+            if(numeros.length !==11){
+            msg.style.display = "block";
+            msg.textContent = "Cpf inválido! Deve conter 11 dígitos.";
+            return false;
+        }
+        }
+
+        function validaNascimento(){
+            const nascimento = document.querySelector('#nascimento').value;
+            const msg = document.querySelector('#mensagem');
+            const ano = nascimento.substring(0,4);
+            if(nascimento =="" || ano <1920 || ano >2026){
+               const msg = document.querySelector('#mensagem');
+            msg.style.display = "block";
+            msg.textContent = "Data de nascimento inválida! (Ano deve estar entre 1920 e 2026)";
+            return false;
+        }
+        return true;
+        }
+     
+        
+    </script>
+</body>
+</html>
+
+    
