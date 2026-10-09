@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Perfil</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
@@ -37,39 +37,42 @@
                 <input type="text" class="form-control" id="cpf" name="CPF" value="seu CPF" onblur="validaCPF()">
             </div>
 
-            <div class="form-group">
-                <button type="button" onclick="mensagem()">salvar</button>
-            </div>
 
             <div>
-               <p>Vc gostou de nossa pagina de login?:</p>
+               <p>Vc tem interesse em nos patrocinar?:</p>
 
                <input type="radio" name="opcao" value="sim"> sim
-               <input type="radio" name="opcao" value="não"> Mais ou menos
                <input type="radio" name="opcao" value="mais ou menos"> Não
             </div>
 
               <div>
-                <p >Seus interesses como pessoa:|vc pode marcar vários ou todos os critérios| </p>
+                <p >Sobre seus interesses como pessoa maque as opcões abaixo:|vc pode marcar vários ou todos os critérios| </p>
                 <input type="checkbox" name="interesses" value="tecnologia"> Tecnologia
                 <input type="checkbox" name="interesses" value="jogos"> Jogos
                 <input type="checkbox" name="interesses" value="esportes"> Esportes
                 <input type="checkbox" name="interesses" value="outros"> outros
-                </div>
+              </div>
 
 
 
 
-              <div>
-                <label for="estado">Estado:</label>
-                <select id="estado" name="estado">
-                <option value="">Selecione um estado</option>
-                <option value="SP">São Paulo</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PR">Paraná</option>
-                <option value="RJ">Rio de Janeiro</option>
-    </select>
-</div>
+             <div>
+               <label for="estado">Estado:</label>
+               <select id="estado" name="estado">
+               <option value="">Selecione um estado</option>
+               <option value="SP">São Paulo</option>
+               <option value="MG">Minas Gerais</option>
+               <option value="PR">Paraná</option>
+               <option value="RJ">Rio de Janeiro</option>
+               </select>
+            </div>
+
+             <div>
+               <label for="descricao">Sobre você:</label>
+               <textarea id="descricao" name="descricao" rows="4"
+               placeholder="Escreva um pouco sobre você..."></textarea>
+             </div>
+
         </form>
     </main>
     <script type="text/javascript">
@@ -113,6 +116,11 @@
      
         
     </script>
+
+       <div class="form-group">
+             <button type="button" onclick="mensagem()">salvar</button>
+       </div>
+
 </body>
 </html>
 
