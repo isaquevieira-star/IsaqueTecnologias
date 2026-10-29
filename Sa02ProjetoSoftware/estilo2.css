@@ -72,3 +72,14 @@ h2 {
 .card p {
     color: blue;
 }
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+
+}
