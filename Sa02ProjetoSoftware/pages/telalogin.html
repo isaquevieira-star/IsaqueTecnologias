@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
 
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../estilo.css">
 </head>
 
 <body>
@@ -16,6 +16,9 @@
         <h1>Login</h1>
 
         <form>
+            
+            <label for="nome">nome:</label>
+            <input type="email" id="email">
 
             <label for="email">email:</label>
             <input type="email" id="email">
@@ -27,11 +30,11 @@
         
 
 
-            <button type="submit">Entrar</button>
+            <button type="button" onclick="window.location.href='paginaincial.html'">Entrar</button>
 
             <p>Ainda não possui uma conta?</p>
 
-            <a href="Cadastro">Criar cadastro</a>
+            <a href="cadastro.html">Criar cadastro</a>
 
 
         </form>

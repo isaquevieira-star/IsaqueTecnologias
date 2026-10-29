@@ -1,0 +1,74 @@
+
+
+body {
+    background-color: #f1f5f9;
+    text-align: center;
+    color: #1e293b;
+}
+
+
+h1 {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+}
+
+
+h3 {
+    color: #334155;
+}
+
+
+img {
+    border: 3px solid blue;
+    margin: 15px;
+}
+
+
+a {
+    display: block;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px auto;
+    width: 220px;
+    
+}
+
+
+a:hover {
+    background-color: darkblue;
+}
+
+
+h2 {
+    color: darkblue;
+    margin-top: 30px;
+}
+
+
+.painel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+
+.card {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+}
+
+
+.card h3 {
+    color: darkblue;
+}
+
+
+.card p {
+    color: blue;
+}
