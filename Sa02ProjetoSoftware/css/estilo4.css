@@ -1,0 +1,58 @@
+
+
+form {
+    background-color: white;
+    width: 350px;
+    max-width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+form textarea {
+    height: 80px;
+}
+
+form button {
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: blue;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+
+}

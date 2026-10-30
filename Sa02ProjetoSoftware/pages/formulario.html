@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - IsaqueTecnologias</title>
+    <link rel="stylesheet" href="../css/estilo4.css">
+</head>
+
+<body>
+
+    <h1>IsaqueTecnologias</h1>
+
+    <h2>Formulário de Compra</h2>
+
+    <p>Preencha seus dados e escolha o produto desejado.</p>
+
+    <form>
+
+        <label>Nome completo:</label>
+        <input type="text" placeholder="digite seu nome" required>
+
+        <label>E-mail:</label>
+        <input type="email" placeholder="digite seu e-mail" required>
+
+        <label>Telefone:</label>
+        <input type="tel" placeholder="digite seu telefone" required>
+
+        <label>Produto que vc deseja:</label>
+        <select required>
+            <option value="">Selecione um produto aq de sua escolha</option>
+            <option>Celular</option>
+            <option>Notebook</option>
+            <option>Tablet</option>
+            <option>Fone de ouvido</option>
+            <option>Smartwatch</option>
+        </select>
+
+        <label>selecione a sua Marca de preferencia:</label>
+        <select>
+            <option>Samsung</option>
+            <option>Apple</option>
+            <option>Motorola</option>
+            <option>Lenovo</option>
+            <option>Outra</option>
+        </select>
+
+        <label>Forma de pagamento:</label>
+        <select required>
+            <option value="">Selecione o modo depagamento</option>
+            <option>Pix</option>
+            <option>Cartão de crédito</option>
+            <option>Cartão de débito</option>
+            <option>Boleto</option>
+        </select>
+
+        <label>Observações:</label>
+        <textarea placeholder="Digite aqui suas dúvidas ou preferências"></textarea>
+
+        <button type="submit">Enviar formulário</button>
+
+    </form>
+
+</body>
+
+ <button type="button" onclick="window.location.href='paginaincial.html'">Voltar para a pagina inicial</button>
+
+</html>

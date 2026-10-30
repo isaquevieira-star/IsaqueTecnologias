@@ -1,53 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vendas dos Últimos 6 Meses</title>
     <link rel="stylesheet" href="../css/estilo3.css">
 </head>
+
 <body>
-    
-<h1>Vendas dos Últimos 6 Meses</h1>
+
+    <h1>Vendas dos ultimos 6 Meses</h1>
+
+    <table>
+        <tr>
+            <th>Mês</th>
+            <th>Quantidade de Vendas</th>
+        </tr>
+
+        <tr>
+            <td>Fevereiro</td>
+            <td><input type="number" id="fevereiro" value="45" min="0"></td>
+        </tr>
+
+        <tr>
+            <td>Março</td>
+            <td><input type="number" id="marco" value="60" min="0"></td>
+        </tr>
+
+        <tr>
+            <td>Abril</td>
+            <td><input type="number" id="abril" value="52" min="0"></td>
+        </tr>
+
+        <tr>
+            <td>Maio</td>
+            <td><input type="number" id="maio" value="75" min="0"></td>
+        </tr>
+
+        <tr>
+            <td>Junho</td>
+            <td><input type="number" id="junho" value="90" min="0"></td>
+        </tr>
+
+        <tr>
+            <td>Julho</td>
+            <td><input type="number" id="julho" value="100" min="0"></td>
+        </tr>
+    </table>
+
+    <br>
+    <button type="button" onclick="salvarVendas()">Clique aqui e salve as alterações feitas</button>
+
+   
+<h1>Estoque de Produtos</h1>
 
 <table>
     <tr>
-        <th>Mês</th>
-        <th>Quantidade de Vendas</th>
+        <th>Nome do Produto</th>
+        <th>Quantidade Disponível</th>
     </tr>
 
     <tr>
-        <td>Fevereiro</td>
-        <td>45</td>
+        <td>Relógio</td>
+        <td><input type="number" id="relogio" value="10" min="0" step="1"></td>
     </tr>
 
     <tr>
-        <td>Março</td>
-        <td>60</td>
+        <td>Celular</td>
+        <td><input type="number" id="celular" value="15" min="0" step="1"></td>
     </tr>
 
     <tr>
-        <td>Abril</td>
-        <td>52</td>
+        <td>Notebook</td>
+        <td><input type="number" id="notebook" value="8" min="0" step="1"></td>
     </tr>
 
     <tr>
-        <td>Maio</td>
-        <td>75</td>
-    </tr>
-
-    <tr>
-        <td>Junho</td>
-        <td>90</td>
-    </tr>
-
-    <tr>
-        <td>Julho</td>
-        <td>100</td>
+        <td>Tablet</td>
+        <td><input type="number" id="tablet" value="12" min="0" step="1"></td>
     </tr>
 </table>
 
-<button type="button" onclick="window.location.href='paginaincial.html'">Voltar para a pagina inicial</button>
+<br>
+
+<button type="button" onclick="salvarEstoque()">Clique aqui para salvar alterações de estoque</button>
+
+
+    
+
+    <button type="button" onclick="window.location.href='paginaincial.html'">
+       Clque aq para voltar para a página inicial. Antes clique em salvar alterações feitas e ealteração de estoque
+    </button>
+
+    <script src="../script.js"></script> 
 
 </body>
 </html>
