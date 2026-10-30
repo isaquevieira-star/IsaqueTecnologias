@@ -17,18 +17,19 @@
 
         <form>
 
-            <label for="nome">nome:</label>
-            <input type="email" id="email">
+             <input id="nome" type="text" placeholder="Digite seu nome">
+            <br><br>
 
-            <label for="email">email:</label>
-            <input type="email" id="email">
+            
+            <input id="email" type="email" placeholder="Digite seu email">
+            <br><br>
 
             <label for="senha">nova senha:</label>
             <input type="password" id="senha">
         
 
-
-            <button type="submit">Entrar com minha nova senha</button>
+            <button onclick="salvarDados()">Clique aq para salvar seus dados e dps em entrar</button>
+            <button type="button" onclick="window.location.href='paginaincial.html'">Entrar com meus novos dados</button>
 
             <a href="telalogin.html">Tela Login</a>
 
@@ -36,6 +37,8 @@
         </form>
 
     </div>
+
+    <script src="../script.js"></script> 
 
 </body>
 
